@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+h1 {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-button {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todos-container {
+  margin-top: 20px;
+}
+
+.todos {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.todo-item.completed .task {
+  text-decoration: line-through;
+}
+
+.task {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.edit-button, .delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  color: #007bff;
+}
+
+.edit-button:hover, .delete-button:hover {
+  color: #0056b3;
+}
+
+.editing .edit-input {
+  display: block;
+}
+
+.editing .task {
+  display: none;
+}
+
+.edit-input {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
